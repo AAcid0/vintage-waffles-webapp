@@ -19,13 +19,29 @@ import './styles/Carrusel.css'
 const CarruselCards = () => {
     useEffect(() => {
         new Swiper('.swiper', {
-            slidesPerView: 4,
+            slidesPerView: 1,
             speed: 400,
             spaceBetween: 100,
+            breakpoints:{
+                320:{
+                    slidesPerView: 2,
+                    spaceBetween: 100
+                },
+
+                640:{
+                    slidesPerView: 2,
+                    spaceBetween: 100
+                },
+                720:{
+                    slidesPerView: 3,
+                    spaceBetween: 100
+                }
+            },
             autoplay: {
                 delay: 5000,
-              },
-            })
+            }
+            
+        })
     })
     return ( 
         <div className="jumbotron jumbotron-fluid cajaCarrusel">

@@ -9,7 +9,7 @@
     font-family: Neuton;
 }
 .hero-menu{
-    padding: 30px;
+    
     margin-bottom: 20px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),url("https://i.ibb.co/4gTZB52/Yellow-Belgian-waffles-seamless-pattern-for-print-design-Cartoon-sweet-vector-illustration-Golden-wa.jpg");
     /* background: #FCE2D8; */
@@ -19,6 +19,7 @@
     position: relative;
 }
 .tab1 {
+    overflow: hidden;
     width: 100%;
     float: left;
 }
@@ -37,21 +38,22 @@
     inline-size: min-content;
     overflow: hidden;
 }
-@media screen and (max-width: 576px){
-    .navBarMenu{
-        width: 100%;
-    }
+
+#navBarMiniCarta {
+    justify-content: center;
+}
+#navBarMiniCarta li{
+    display: inline;
     
 }
-
-#navBarMiniCarta li > a{
+#navBarMiniCarta li > button{
     font-family: Urbanist;
+    font-size: 25px;
+    background-color: #C7A78E;
+    color: white;
      
 }
-#navBarMiniCarta ul li{
-    width: 25%;
-}
-#navBarMiniCarta li > a:hover{
+#navBarMiniCarta li > button:hover{
     animation-name: bounce;
     animation-duration: 0.7s;
 }
@@ -70,4 +72,29 @@
         margin-top: -10px;
       }
   }
- 
+
+@media screen and (max-width: 576px){
+    #navBarMiniCarta{
+        display: flex;
+        flex-direction: column;
+    }
+    .navBarMenu{
+        width: 50%;
+    }
+    #navBarMiniCarta li > button{
+        margin-top: 20px;
+    }
+    .altText{
+        font-size: 85px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #navBarMiniCarta li > button{
+        margin-top: 30px;
+    }
+    #navBarMiniCarta{
+        display: flex;
+    }
+    
+}

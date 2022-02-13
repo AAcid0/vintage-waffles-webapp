@@ -47,6 +47,8 @@
 footer {
     background-color: #C7A78E;
     padding-top: 15px;
+    width: 100%;
+    overflow: hidden;
 }
 footer .footer-widget h3 {
     margin-bottom: 20px;

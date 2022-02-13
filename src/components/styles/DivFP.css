@@ -35,3 +35,13 @@ div h1 {
     border-top: solid 1px black;
     
 } */
+
+@media screen and (max-width: 600px){
+    #elloving{
+        width: 300px;
+        height: 200px;
+    }
+    .textoDiv {
+        font-size: 200%;
+    }
+}

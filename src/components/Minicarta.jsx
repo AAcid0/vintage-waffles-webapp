@@ -23,20 +23,37 @@ const Minicarta = () => {
         })
          return(
             <div className="primerTab">
-                <h3 className='altText tipo-plato'>- {listaElem[0].titulo} -</h3>
+                <p className='altText tipo-plato'>- {listaElem[0].titulo} -</p>
+                <div className='row'>
                 {listaElem.map(item => <CartaItem key={uuidv4()} imgsrc={item.imgurl} title={item.nombre} price={item.precio} dscr={item.ingredientes}/>)}
+
+                </div>
             </div>
-            )
+        )
     }
 
     return ( 
         <div className="hero-menu wrapper">
-            <hgroup>
-                <h1 className='mainText'>UN POCO DE LO NUESTRO</h1>
-            </hgroup>
-            <p id='flechita' className="bi bi-arrow-down-circle m-4 text-center"></p>
-            <div className='container' style={{width:"500px"}}>
-                <nav className="navbar navbar-expand-lg navbar-light bg-light navBarMenu border border-dark d-flex">
+            <div className='container'>
+                <p className='mainText display-1 text-center py-2'>UN POCO DE LO NUESTRO</p>
+                <p id='flechita' className="bi bi-arrow-down-circle  text-center"></p>
+            </div>
+            <div className='container d-flex justify-content-center'>
+                <ul id='navBarMiniCarta' className="">
+                    <li className="mx-4">
+                        <button className="p-2 border border-dark" onClick={e => handleCLick(e, "waffle")}>Waffles</button>
+                    </li>
+                    <li className="mx-4">
+                        <button className="p-2 border border-dark" onClick={e => handleCLick(e, "adicion")}>Adiciones</button>
+                    </li>
+                    <li className="mx-4">
+                        <button className="p-2 border border-dark text-nowrap" onClick={e => handleCLick(e, "desa_pos")}>Desayunos Y Postres</button>
+                    </li>
+                    <li className="mx-4">
+                        <button className="p-2 border border-dark" onClick={e => handleCLick(e, "decora")}>Decoraciones</button>
+                    </li>
+                </ul>
+                {/* <nav className="navbar navbar-expand-lg navbar-light bg-light navBarMenu border border-dark d-flex">
                     <div className="container-fluid">
                         <div className="collapse navbar-collapse" id="navbarText">
                             <ul id='navBarMiniCarta' className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -56,7 +73,7 @@ const Minicarta = () => {
                         
                         </div>
                     </div>
-                </nav>
+                </nav> */}
             </div>
                 
             <div className="tabs-container">

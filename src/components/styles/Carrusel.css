@@ -20,3 +20,9 @@
     font-family: Urbanist;
     /*-webkit-text-stroke: 2px white;*/
 }
+
+@media screen and (max-width: 600px) {
+    .lg-text {
+        font-size: 30px !important; 
+    }
+}
