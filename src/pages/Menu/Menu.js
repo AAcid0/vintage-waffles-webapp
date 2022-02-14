@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import logo from '../../images/Recurso.svg';
+import logo from '../../images/svg/Recurso.svg';
 import Carta from './component/Carta';
 import './menu.css';
 import { v4 as uuidv4 } from 'uuid';
@@ -19,7 +19,7 @@ const Menu = () => {
             return item.tipo == tipo
         })
         return (
-        <div className='d-flex flex-row'>
+        <div className='d-flex' id="platosContainer">
             {listaPlatos.map(ele => <Carta key={uuidv4()} imgsrc={ele.imgurl} nombreProducto={ele.nombre} ingredientes={ele.ingredientes} precio={ele.precio} />)}
         </div>
         )
@@ -36,26 +36,22 @@ const Menu = () => {
             <div className='container'>
                 <p style={{"color":"black"}} className='textoDiv'>Échale un vistazo a nuestra carta de deliciosos productos 100% artesanales</p>
                 {/* Barra de navegacion con tipos de platos */}
-                <nav className="navbar navbar-expand-lg navbar-light bg-light navBarMenuPage">
-                    <div className="container-fluid">
-                        <div className="collapse navbar-collapse">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-MenuPage">
-                                <li className="nav-item">
-                                    <a className="nav-link" onClick={e => handleCLick(e, "waffle")}>Waffles</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" onClick={e => handleCLick(e, "adicion")}>Adiciones</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" onClick={e => handleCLick(e, "desa_pos")}>Desayunos Y Postres</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" onClick={e => handleCLick(e, "decora")}>Decoraciones</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <div className='container d-flex justify-content-center'>
+                <ul id='navBarMiniCarta'>
+                    <li className="mx-3">
+                        <button className="p-2 border border-dark" onClick={e => handleCLick(e, "waffle")}>Waffles</button>
+                    </li>
+                    <li className="mx-3">
+                        <button className="p-2 border border-dark" onClick={e => handleCLick(e, "adicion")}>Adiciones</button>
+                    </li>
+                    <li className="mx-3">
+                        <button className="p-2 border border-dark text-nowrap" onClick={e => handleCLick(e, "desa_pos")}>Desayunos Y Postres</button>
+                    </li>
+                    <li className="mx-3">
+                        <button className="p-2 border border-dark" onClick={e => handleCLick(e, "decora")}>Decoraciones</button>
+                    </li>
+                </ul>
+                </div>
                 
             </div>
                 {tipoPlato ? renderProductos(tipoPlato) : (<p className="textoDiv">Presiona un elemento para desplegar</p>)}     

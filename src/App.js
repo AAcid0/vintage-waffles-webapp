@@ -6,8 +6,6 @@ import DivFP from './components/DivFP';
 import Footer from './components/Footer';
 import Minicarta from './components/Minicarta';
 import Horarios from './components/Horarios';
-import Carousel from './components/Carousel'
-import Card1 from './components/Card1';
 import PagMenu from './pages/Menu/Menu';
 import Nosotros from './pages/Nosotros/Nosotros';
 

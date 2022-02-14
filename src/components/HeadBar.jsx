@@ -1,33 +1,33 @@
 import React, { Component } from 'react';
-import logo from '../images/logoClaroHor.svg';
+import logo from '../images/svg/logoClaroHor.svg';
 import './styles/HeadBar.css';
 import {Link} from 'react-router-dom';
 
 class HeadBar extends Component {
     render(){
       return(
-        <nav class="navbar navbar-expand-lg static-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">
+        <nav className="navbar navbar-expand-lg static-top">
+  <div className="container">
+    <a className="navbar-brand" href="#">
       <img src={logo} alt="Logo Vintage Waffles Cali" id='logoNav'/>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto ulNavBar">
-        <li class="nav-item">
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav ms-auto ulNavBar">
+        <li className="nav-item">
           <Link className="nav-link text-white" to="/">Inicio</Link>
-          {/* <a class="nav-link active" aria-current="page" href="#">Home</a> */}
+          {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
           <Link className="nav-link text-white" to="/nosotros">¿Quiénes Somos?</Link>
           
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
         <Link className="nav-link text-white" to="/nuestromenu">Nuestros Productos</Link>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
         <Link className="nav-link text-white" to="/nuestromenu">Contáctanos</Link>
         </li>
       </ul>

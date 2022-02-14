@@ -41,38 +41,19 @@
     position: absolute;
     text-shadow : 5px 5px 5px rgba(0, 0, 0, 1.5); /*x,y,blur,color*/
     color: #fff;
+    background-color: #C7A78E;
+    top: 30%;
 }
 
 .video-container-text p{
-    top: 15%;
+    top: 50%;
     position: absolute;
     font-family: Neuton;
     font-size: 40px;
     color: #fff;
+    background-color: #C7A78E;
 }
 
-.days-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    position: absolute;
-    top:35%;
-    width: 100%;
-    height: 100%;
-    padding: 0%;
-}
-.day-hour{
-    position: relative;
-    display: inline-flex;
-    width: 100%;
-    min-width: 0;
-    justify-content: center;
-}
-.day-hour span{
-    font-family: Neuton;
-    font-size: 25px;
-    color: #fff;
-}
 .linea-puntos1{
     border-bottom: 2px dotted rgba(204,204,204);
     width: 25%;
@@ -80,4 +61,13 @@
 
 .dia .linea-puntos1 .hora{
     margin-left: 1px;
+}
+
+@media screen and (max-width:576px) {
+    .video-container-text h3{
+        font-size: 25px;
+    }
+    .video-container-text p{
+        font-size: 20px;
+    }
 }

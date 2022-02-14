@@ -21,3 +21,14 @@
     text-align: center;
     color: white;
 }
+@media screen and (max-width:576px) {
+    #svgLogoNos + h3{
+        font-size: 80px;
+    }
+    #primerTexto{
+        display: block;
+    }
+    #laMision{
+        display: block;
+    }
+}

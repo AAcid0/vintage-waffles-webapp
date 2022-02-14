@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './styles/DivFP.css'
-import Carousel from './Carousel';
-import img1 from '../images/pd1.jpg';
-import img2 from '../images/pd2.jpg';
-import img3 from '../images/pd3.jpg';
-import loving from '../images/loving1.svg'
+import loving from '../images/svg/loving1.svg'
 
 
 class DivFP extends Component {

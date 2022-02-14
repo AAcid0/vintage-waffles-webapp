@@ -26,3 +26,13 @@
 }
 /**/
 
+@media screen and (max-width:992px) {
+    .navbar-toggler{
+        border: solid 1px white !important;
+    }
+    .navbar-toggler-icon::after{
+        color: white;
+        font-size: 30px;
+        content: "\021D3";
+    }
+}

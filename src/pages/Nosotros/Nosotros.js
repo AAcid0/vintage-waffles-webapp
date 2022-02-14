@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
-import logo from '../../images/Recurso.svg';
-import pareja from '../../images/chicosFelices.svg'
-import chico from '../../images/pareja2.svg'
+import logo from '../../images/svg/Recurso.svg';
+import pareja from '../../images/svg/chicosFelices.svg'
+import chico from '../../images/svg/pareja2.svg'
 import './Nosotros.css'
 import Carousel from '../../components/Carousel';
 
@@ -20,7 +20,7 @@ const Nosotros = () => {
             <p className="animate__bounceInRight sec-Text text-center"><strong>un espacio lleno de dulzura, amor y buenas vibras</strong></p>
             <hr style={{"width":"50%","margin":"auto"}} className='my-4'/>
             </div>
-            <div className='row g-0'>
+            <div className='row g-0' id="primerTexto">
                 <div className='col'>
                     <img id='svgPareja' className='mx-auto d-block ' src={pareja} viewBox='0 0 200 200'/>
                 </div>
@@ -36,7 +36,7 @@ const Nosotros = () => {
                     <hr style={{"width":"50%","margin":"auto"}} className='my-5'/>
                 </div>
             </div>
-            <div className='row g-0'>
+            <div className='row g-0' id="laMision">
                 <div className='col'>
                     <p className='mainText text-center display-2'>Nuestra Misión</p>
                     <p className='sec-Text text-center display-6'>

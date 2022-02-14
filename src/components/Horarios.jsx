@@ -1,56 +1,95 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import vidfondo from '../images/vids/waffles-reducidos.mp4';
+import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+import Card1 from './Card1';
 import './styles/Horarios.css';
+import img1 from '../images/clients/clientews1.jpg';
+import img2 from '../images/clients/clientews2.jpg';
+import img3 from '../images/clients/clientews3.jpg';
+import img4 from '../images/clients/clientews4.jpg';
+import img5 from '../images/clients/clientews5.jpg';
+import img6 from '../images/clients/clientews6.jpg';
+import img7 from '../images/clients/clientews7.jpg';
+import img8 from '../images/clients/clientews8.jpg';
+import img9 from '../images/clients/clientews9.jpg';
+import img10 from '../images/clients/clientews10.jpg';
 
-class Horarios extends Component {
-    render(){
-        return(
-            <div  id="video-container" className="jumbotron">
-                <div className="capaOscura"></div>
+const Horarios = () => {
+    useEffect(() => {
+        new Swiper('.swiper1', {
+            slidesPerView: 1,
+            speed: 400,
+            spaceBetween: 100,
+            breakpoints:{
+                320:{
+                    slidesPerView: 2,
+                    spaceBetween: 100
+                },
+
+                640:{
+                    slidesPerView: 2,
+                    spaceBetween: 100
+                },
+                720:{
+                    slidesPerView: 4,
+                    spaceBetween: 100
+                }
+            },
+            autoplay: {
+                delay: 2000,
+            }, 
+            
+        })
+    })
+    return ( 
+        <div  id="video-container" className="jumbotron">
+               
                 <video playsInline="playsinline" autoPlay="autoplay" muted="muted" loop="loop">
                     <source src={vidfondo} type="video/mp4"/>
                 </video>
                 <div className="video-container-text">
                     <h3 className="mainText">ORDENA TU WAFFLE A DOMICILIO</h3>
                     <p>¿Qué esperas para sorprender a aquellos que más amas?</p>
-                    <div className="days-container">
-                        <div className="day-hour">
-                            <span className="dia">lunes</span>
-                            
-                            <span className="hora">Cerrado</span>
-                        </div>
-                        <div className="day-hour">
-                            <span className="dia">martes</span>
-                            
-                            <span className="hora">8 am - 4 pm</span>
-                        </div>
-                        <div className="day-hour">
-                            <span className="dia">miércoles</span>
-                            
-                            <span className="hora">8 am - 4 pm</span>
-                        </div>
-                        <div className="day-hour">
-                            <span className="dia">jueves</span>
-                            
-                            <span className="hora">8 am - 4 pm</span>
-                        </div>
-                        <div className="day-hour">
-                            <span className="dia">viernes</span>
-                            
-                            <span className="hora">8 am - 4 pm</span>
-                        </div>
-                        <div className="day-hour">
-                            <span className="dia">sábado</span>
-                            
-                            <span className="hora">8 am - 7 pm</span>
-                        </div>
-                    </div>
                     
                 </div>
 
+                <div className="swiper1 pb-3 px-4" dir="rtl">
+                <div className="swiper-wrapper my-3">
+                    <div className="swiper-slide d-flex justify-content-center ">
+                        <Card1 imgsrc={img1} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img2} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img3} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img4} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img5} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img6} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img7} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img8} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img9} remWidth="10rem"/>
+                    </div>
+                    <div className="swiper-slide d-flex justify-content-center">
+                        <Card1 imgsrc={img10} remWidth="10rem"/>
+                    </div>
+                </div>
             </div>
-        );
-    }
-}
 
+        </div>
+     );
+}
+ 
 export default Horarios;

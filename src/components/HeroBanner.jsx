@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import "./styles/HeroBanner.css"
-import HeadBar from './HeadBar';
-import logo from '../images/LogoDarksvg.svg';
-import vidfondo from '../images/vids/wafflesBanner.mp4';
+import logo from '../images/svg/LogoDarksvg.svg';
 
 class HeroBanner extends Component {
     //<h1 className="slide-in-left"><span>Vintage Waffles</span></h1>

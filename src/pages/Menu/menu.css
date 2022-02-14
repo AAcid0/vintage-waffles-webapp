@@ -6,7 +6,7 @@
     
 }
 
-#containerMenu > h3{
+#containerMenu  h3{
     font-size: 125px;
     text-align: center;
     color: white;
@@ -21,7 +21,9 @@
     width: 300px;
     height: 200px;
 }
-
+#platosContainer{
+    flex-direction: row;
+}
 .navBarMenuPage{
     width: 38%;
     padding-left: 20px;
@@ -42,3 +44,20 @@
     animation-duration: 0.7s;
     font-weight: bold;
   }
+
+  @media screen and (max-width:576px) {
+    #containerMenu > h3{
+        font-size: 80px;
+    }
+    #jumbotronMenu{
+        height: 400px;
+    }
+    #platosContainer{
+        flex-direction: column;
+    }
+  }
+@media screen and (max-width:992px) {
+    #jumbotronMenu{
+        height: 500px;
+    }
+}

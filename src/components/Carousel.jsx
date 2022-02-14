@@ -1,12 +1,13 @@
 import React, {Fragment, useEffect} from 'react';
 import './styles/Carousel.css';
-import img1 from '../images/products/pd4.jpg';
+import img1 from '../images/products/cajatropical2.jpeg';
 import img3 from '../images/pd2.jpg';
-import img2 from '../images/clientes.JPG';
+import img2 from '../images/products/desayuno1.png'; //cambiar
 import img5 from '../images/planNiños.jpeg';
-import img4 from '../images/products/pd10.jpg';
+import img4 from '../images/products/pd2.jpg';
 import img6 from '../images/products/muestra1.jpeg';
-
+import img7 from '../images/products/waffle1.jpeg';
+import img8 from '../images/products/cajaDecorada.jpg';
 const Carousel = () => {
 /*   const showSlides = () => {
   var slideshows = document.querySelectorAll('[data-component="slideshow"]');
@@ -34,32 +35,39 @@ const Carousel = () => {
     showSlides();
   }) */
     return (
-      <div class="image-mosaic">
+      <div className="image-mosaic">
       <div
-        class="card card-wide"
-        style={{"backgroundImage" : "url("+img1+")","backgroundPosition":"0% 70%"}}
+        className="card card-wide"
+        style={{"backgroundImage" : "url("+img1+")","backgroundPosition":"0% 70%",backgroundSize:"100%"}}
       ></div>
       <div
-        class="card card-tall"
+        className="card card-tall"
         style={{"backgroundImage": "url("+img3+")"}}
       ></div>
       <div
-        class="card"
+        className="card"
         style={{"backgroundImage": "url("+img2+")"}}
       ></div>
       <div
-        class="card"
+        className="card"
         style={{"backgroundImage": "url("+img5+")"}}
       ></div>
       <div
-        class="card"
+        className="card"
         style={{"backgroundImage": "url("+img4+")"}}
       ></div>
       <div
-        class="card"
+        className="card"
         style={{"backgroundImage": "url("+img6+")"}}
       ></div>
-      
+      <div
+        className="card"
+        style={{"backgroundImage": "url("+img7+")"}}
+      ></div>
+      <div
+        className="card"
+        style={{"backgroundImage": "url("+img8+")"}}
+      ></div>
       {/* <Fragment>
         <div id="slideshow-example" data-component="slideshow">
 		      <div role="list">

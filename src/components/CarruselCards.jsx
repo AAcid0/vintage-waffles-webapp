@@ -49,37 +49,37 @@ const CarruselCards = () => {
             <div className="swiper pb-3 px-4">
                 <div className="swiper-wrapper">
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img1} />
+                        <Card1 imgsrc={img1} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img2} />
+                        <Card1 imgsrc={img2} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img3} />
+                        <Card1 imgsrc={img3} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img4} />
+                        <Card1 imgsrc={img4} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img5} />
+                        <Card1 imgsrc={img5} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img6} />
+                        <Card1 imgsrc={img6} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img7} />
+                        <Card1 imgsrc={img7} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img8} />
+                        <Card1 imgsrc={img8} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img9} />
+                        <Card1 imgsrc={img9} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img10} />
+                        <Card1 imgsrc={img10} remWidth="18rem"/>
                     </div>
                     <div className="swiper-slide d-flex justify-content-center">
-                        <Card1 imgsrc={img11} />
+                        <Card1 imgsrc={img11} remWidth="18rem"/>
                     </div>
                 </div>
             </div>

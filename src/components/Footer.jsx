@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Footer.css';
-import logo from '../images/logoClaro.svg';
+import logo from '../images/svg/logoClaro.svg';
 
 const Footer = () => {
   
@@ -35,7 +35,7 @@ const Footer = () => {
                     <li><p><strong>lunes - sábados :</strong><i> 9am - 5pm</i> </p></li>
                     <li><p><strong>domingos - festivos :</strong><i> cerrado</i></p></li>
                     <li><i>(+57) 3172778282</i></li>
-                    <li><strong>Haz tu pedido ahora mismo <span class="bi bi-telephone-outbound-fill"></span></strong></li>
+                    <li><strong>Haz tu pedido ahora mismo <span className="bi bi-telephone-outbound-fill"></span></strong></li>
                   </ul>
                   
                 </div>
